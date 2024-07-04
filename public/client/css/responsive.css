@@ -1,0 +1,73 @@
+/* Add this to your existing CSS file or a new CSS file */
+
+/* Ensure meta viewport is included in your HTML head */
+/* <meta name="viewport" content="width=device-width, initial-scale=1"> */
+
+@media (max-width: 767px) {
+    .col-sm-8 {
+      width: 100%;
+    }
+    .side-bar {
+      width: 100%;
+      margin-top: 20px; /* Adjust as needed */
+    }
+    .col-row {
+      flex-direction: column;
+    }
+  }
+
+@media (max-width: 768px) {
+    .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .col-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .content, 
+    .row .side-bar,
+    .row .col-half,
+    .row .design-pst{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col-half-4-5,
+    .col-half-2-5,
+    .col-half-3,
+   .col-half-3-3 {
+        width: 100%;
+        margin-bottom: 20px;
+        /* Add some spacing between the sections */
+    }
+
+    .slider-controls-s-1 {
+        text-align: center;
+        /* Center the slider controls for better appearance on mobile */
+    }
+
+    .custom-buttons .row {
+        flex-direction: column;
+    }
+
+    .custom-buttons .col-6 {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .side-bar {
+        width: 35%;
+        /* Adjust as needed */
+        margin-top: 20px;
+        /* Adjust as needed */
+    }
+}
